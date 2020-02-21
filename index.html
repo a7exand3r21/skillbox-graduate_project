@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Дипломный проект</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper.min.css" />	
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />	
+	<link rel="stylesheet" href="css/jquery.formstyler.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container flex-container">
+				<nav class="nav-block">
+					<ul class="nav-block__list">
+						<li class="nav-block__item"><a href="#skills" class="nav-block__link" aria-label="услуги">Услуги</a></li>
+						<li class="nav-block__item"><a href="#portfolio" class="nav-block__link" aria-label="портфолио">Портфолио</a></li>
+						<li class="nav-block__item"><a href="#price" class="nav-block__link" aria-label="стоимость">Стоимость</a></li>
+					</ul>
+				</nav>
+				<div class="contacts">
+					<button class="nav-icon" aria-label="навигация" id="nav-icon">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</button>
+					<ul class="contacts__list">
+						<li class="contacts__item"><a href="tel:+7(499)995-77-55" class="contacts__phone">+7 (499) 995-55-77</a></li>
+						<li class="contacts__item">
+							<button class="contacts__callback_btn hover-btn-rounded" aria-label="обратная связь">
+								<span class="contacts__btn-span">Заказать звонок</span>
+							</button>			
+						</li>
+					</ul>
+					<div class="modal animated fadeInUp" style="display: none;" id="callback">
+						<form class="modal_form">
+							<div class="modal_form__contents">
+								<input type="hidden" name="project_name" value="Имя пользователя" />
+								<input type="hidden" name="admin_email" value="jensenadam745@gmail.com" />
+								<input type="hidden" name="form_subject" value="Заявка" />
+								<h3 class="modal_form__title" aria-label="Форма обратной связи">Форма обратной связи</h3>
+								<input type="text" name="Имя" required placeholder="Ваше имя" class="modal_form__input" />
+								<input type="tel" required name="Телефон" placeholder="+7(___) ___-__-__" class="modal_form__input" id="tel"/>
+								<input type="email" name="эмаил адрес" placeholder="e-mail" class="modal_form__input" />
+								<button type="submit" value="Отправить" class="modal_form__submit" aria-label="отправить данные формы">Отправить</button>
+							</div>
+						</form>
+					</div>	
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="about">
+				<div class="items-animated">
+					<span class="animated fadeIn delay">&#60;/&#62;</span>
+					<span class="animated fadeIn delay-2s">&#60;div&#62;</span>
+					<span class="animated fadeIn delay-3s">&#60;div&#62;</span>
+					<span class="animated fadeIn delay-4s">{&thinsp;}</span>
+					<span class="animated fadeIn delay-5s">#</span>
+					<span class="animated fadeIn delay">&#60;/&#62;</span>
+				</div>
+				<div class="container flex-container">
+					<div class="about__left-side">
+						<h1 class="about__items-header">Дмитрий Алексеев</h1>
+						<p class="about__items-description">Frontend-разработчик и&nbsp;веб-верстальщик</p>	
+						<button class="about__items-btn about__form--zindex hover-btn-jump" aria-label="узнать больше" onclick="">Узнать больше</button>	
+					</div>
+					<div class="about__right">
+						<picture>
+							<source  media="(max-width: 768px)" srcset="img/shutterstock_574398823m.png">
+							<img src="img/shutterstock_574398823.png" alt="web-developer" />
+						</picture>
+					</div>
+					<svg width="12.764in" height="8.75in" preserveAspectRatio="none">
+						<defs>
+							<linearGradient id="PSgrad_0" x1="0%" x2="22.495%" y1="97.437%" y2="0%">
+								<stop offset="0%" stop-color="rgb(255,143,90)" stop-opacity="1" />
+								<stop offset="99%" stop-color="rgb(255,47,150)" stop-opacity="1" />
+							</linearGradient>
+						</defs>
+						<path fill-rule="evenodd"  fill="rgb(96, 85, 196)"
+						d="M394.819,32.771 C501.505,-8.891 602.187,-9.019 686.362,22.255 C770.754,53.275 838.641,115.698 884.752,193.274 C928.999,271.621 928.952,355.775 892.815,423.850 C856.178,492.940 795.199,545.029 712.103,582.204 C668.095,600.922 621.837,613.746 563.031,621.617 C505.000,629.373 434.420,632.178 359.641,628.177 C211.243,620.480 44.927,584.346 9.853,502.841 C-10.023,462.369 2.453,415.976 27.165,369.289 C52.282,322.533 89.635,275.483 128.853,232.124 C168.477,188.696 209.966,148.959 252.680,115.260 C295.800,81.492 340.143,53.761 394.819,32.771 L394.819,32.771 Z"/>
+						<path fill="url(#PSgrad_0)"
+						d="M394.819,32.771 C501.505,-8.891 602.187,-9.019 686.362,22.255 C770.754,53.275 838.641,115.698 884.752,193.274 C928.999,271.621 928.952,355.775 892.815,423.850 C856.178,492.940 795.199,545.029 712.103,582.204 C668.095,600.922 621.837,613.746 563.031,621.617 C505.000,629.373 434.420,632.178 359.641,628.177 C211.243,620.480 44.927,584.346 9.853,502.841 C-10.023,462.369 2.453,415.976 27.165,369.289 C52.282,322.533 89.635,275.483 128.853,232.124 C168.477,188.696 209.966,148.959 252.680,115.260 C295.800,81.492 340.143,53.761 394.819,32.771 L394.819,32.771 Z"/>
+					</svg>		
+				</div>
+			</section>
+			<section class="skills" id="skills">
+				<div class="container">
+					<h2 class="skills__header">Что я делаю</h2>
+					<ul class="skills__list">
+						<li class="skills__list-item" >
+							<img class="skills__image" src="img/icons/tools-and-utensils.webp" alt="" />
+							<p class="skills__description">Вёрстка лендинг&mdash;страниц и&nbsp;сайтов любой сложности</p>
+						</li>
+						<li class="skills__list-item">
+							<img class="skills__image" src="img/icons/responsive.webp" alt="" />
+							<p class="skills__description">Адаптивная вёрстка под все браузеры и&nbsp;устройства</p>
+						</li>
+						<li class="skills__list-item">
+							<img class="skills__image" src="img/icons/programming.webp" alt="" />
+							<p class="skills__description">Frontend&mdash;разработка и&nbsp;программирование</p>
+						</li>
+						<li class="skills__list-item">
+							<img class="skills__image" src="img/icons/coding.webp" alt="" />
+							<p class="skills__description">Исправление и&nbsp;доработка существующей вёрстки</p>
+						</li>
+					</ul>
+					<button class="learn_price__btn hover-btn-jump" aria-label="узнать стоимость">Узнать стоимость</button>
+				</div>
+			</section>	
+			<section class="portfolio" id="portfolio">
+					<div class="container">
+						<h2 class="portfolio__header">Примеры моих работ</h2>
+						<div class="swiper-container">
+							<div class="swiper-button-prev" aria-label="предыдущий слайд"></div>
+							<div class="swiper-button-next" aria-label="следующий слайд"></div>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="img/Layer_1.jpg" alt=""><p class="swiper-text">Сайт психолога Веры Антоновой</p></div>
+								<div class="swiper-slide"><img src="img/Layer_2.jpg" alt=""><p class="swiper-text slide-text__1920">Сайт магазина детской одежды</p><p class="slide-text__1024">Интернет-магазин детской одежды</p></div>
+								<div class="swiper-slide"><img src="img/Layer_3.jpg" alt=""><p class="swiper-text">Сайт магазина «Рыболов»</p></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>						
+						<button class="portfolio__order_btn hover-btn-jump" aria-label="заказать проект" id="order">Заказать проект</button>						
+					</div>					
+					<button class="portfolio__order_btn-1024 hover-btn-jump button" aria-label="узнать стоимость">Узнать стоимость</button>					
+			</section>
+			<section class="pricing" id="price">
+				<div class="pricing__text">
+					<div class="container">
+						<h2 class="pricing__header">Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.&#42;</h2>
+						<p class="pricing__description">Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</p>
+					</div>
+				</div>
+					<span class="pricing__bg-items">&#60;/&#62;</span>
+					<span class="pricing__bg-items">&#60;div&#62;</span>
+					<span class="pricing__bg-items">{&thinsp;}</span>
+					<span class="pricing__bg-items">{&thinsp;}</span>
+					<span class="pricing__bg-items">#</span>
+			</section>		
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="container flex-container">
+					<nav class="footer__navigation">
+						<ul class="footer__list">
+							<li class="footer__list_item"><a href="#skills" class="footer__link">Услуги</a></li>
+							<li class="footer__list_item"><a href="#portfolio" class="footer__link">Портфолио</a></li>
+							<li class="footer__list_item"><a href="#price" class="footer__link">Стоимость</a></li>
+						</ul>
+					</nav>
+					<address class="footer__contacts">
+						<a class="footer__link-tel" href="tel:+7(499)995-77-55">+7 (499) 995-77-55</a>
+						<a class="footer__link-mail" href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
+					</address>
+					<div class="footer__social">
+						<button class="footer__callback-btn hover-btn-rounded" aria-label="обратная связь">Заказать звонок</button>
+						<ul class="footer__social-list">
+							<li class="footer__social-item"><a class="footer__social-vk" href="http://vk.com"  aria-label="ВКонтакте"></a></li>
+							<li class="footer__social-item"><a class="footer__social-fb" href="http://fb.com" aria-label="Фейсбук"></a></li>
+							<li class="footer__social-item"><a class="footer__social-tw" href="http://twitter.com" aria-label="Твиттер"></a></li>
+							<li class="footer__social-item"><a class="footer__social-inst" href="http://instagram.com" aria-label="Инстаграм"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+			<div class="footer__bottom">
+				<p>© Дмитрий Алексеев, 2016 – 2018</p>
+			</div>
+		</footer>
+	</div>
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<script src="libs/jquery.inputmask.min.js"></script>
+	<script src="libs/jquery.validate.min.js"></script>
+	<script src="libs/jquery.formstyler.min.js"></script>
+	<script src="js/script.js"></script>	
+</body>
+</html>
