@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$(  '.nav-icon' ).click(function(event){
+  $(  '.nav-icon' ).click(function(event){
 
     $(this).toggleClass(  'open'  );
 
@@ -10,17 +10,54 @@ $(document).ready(function(){
 
         $(  "body"  ).css(  "overflow","hidden" );
 
-        $(  '.nav-block__list'  ).css(  "display", "flex" );
+    } else {  $(  "body"  ).css(  "overflow","auto" );
 
-    } else {
+              $(  '.nav-icon' ).removeClass(  'open'  );
 
-        $(  "body"  ).css(  "overflow","auto" );
+            }
+ 
+  })
 
-        $(  '.nav-block__list'  ).css(  "display", "none" );
+});
+
+$(window).resize(function() {
+
+  if( $( window ).width() <= 1024 ) {
+
+    $(  '.nav-block__list'  ).css(  'display','none'  );
+
+  } else {  $(  '.nav-block__list'  ).css(  'display','flex'  );  }
+          
+});
+
+$(window).resize(function() {
+
+  if( $( window ).width() <= 1024 ) {
+
+    $(  '.nav-block__link'  ).click(function()  {
+
+      $(  '.nav-block__list'  ).css(  'display','none'  );
+
+      $(  "body"  ).css(  "overflow","auto" );
+
+      $(  '.nav-icon' ).removeClass(  'open'  );
+
+    })
+
+  } else {
+
+    if( $( window ).width() > 1024 )  {
+
+      $(  '.nav-block__link'  ).click(function()  {
+
+        $(  '.nav-block__list'  ).css(  'display','flex'  );
+
+      })
+
     }
 
-  });
-  
+  }
+
 });
 
 var mySwiper = new Swiper(  '.swiper-container', {
@@ -85,34 +122,6 @@ var mySwiper = new Swiper(  '.swiper-container', {
              }
            }
       },
-});
-
-
-$(document).ready(function () {
-
-  if( $( window ).width() < 1025 ){
-
-    $(  '.nav-block__link'  ).click(function(){
-
-      $(  '.nav-block__list'  ).css(  "display", "flex" );
-
-      $(  '.nav-block__list'  ).slideToggle(  "slow"  );
-
-      $(  "body"  ).css(  "overflow","auto" );
-
-      $(  '.nav-icon' ).removeClass( 'open' );
-    })
-
-  } else {
-
-    $(  '.nav-block__link'  ).click(function(){
-
-      $(  '.nav-block__link'  ).css(  "display", "flex" );
-
-      $(  "body"  ).css(  "overflow","auto" );
-
-    })
-  }
 });
 
 $(  '.contacts__callback_btn, .footer__callback-btn, #order'  ).click(function(event) {
@@ -188,10 +197,3 @@ $(  ".portfolio__order_btn-1024, .learn_price__btn" ).click(function() {
       
       },50);
 });
-
-
-
-
-
-
-
