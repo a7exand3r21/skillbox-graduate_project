@@ -60,6 +60,8 @@ $(window).resize(function() {
 
 });
 
+$(document).ready(function(){
+
 var mySwiper = new Swiper(  '.swiper-container', {
 	loop: true,
 	preloadImages: false,
@@ -122,6 +124,7 @@ var mySwiper = new Swiper(  '.swiper-container', {
              }
            }
       },
+});
 });
 
 $(  '.contacts__callback_btn, .footer__callback-btn, #order'  ).click(function(event) {
