@@ -851,6 +851,11 @@ h6 {
     padding-bottom: 7.3%;
 }
 
+.portfolio .container
+{
+    position: relative;
+}
+
 .swiper-pagination {
     left: 50%;
 
@@ -876,7 +881,7 @@ h6 {
 
 .swiper-button-next,
 .swiper-button-prev {
-    top: 31%;
+    top: 52%;
 }
 
 .swiper-button-next {
@@ -896,13 +901,13 @@ h6 {
 }
 
 .swiper-button-next {
-    right: -22px;
+    right: 1%;
     left: auto;
 }
 
 .swiper-button-prev {
     right: auto;
-    left: -22px;
+    left: 1%;
 }
 
 .swiper-text,
